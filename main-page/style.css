@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #B7BABE;
+  font-family: 'Merriweather', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+body {
+  background: #0e1013;
+}
+
+h1, p {
+  max-width: 480px;
+  text-align: center;
+  margin: 60px auto;
+  font-family: 'Courier New', Courier, monospace;
+  color: #FFF;
+}
+
+h1::after {
+  content: '🤓';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+
+}
+
+
+@keyframes pisca {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.87);
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  color: red;
+}
+
+.final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.generator {
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  height: 100px;
+  width: 800px;
+}
+
+
+.sad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: red;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+
+.btn:active {
+  transform: scale(0.98);
+  
+}
+
+.btn:focus {
+  outline: none
+}
